@@ -1,759 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - EduLearn</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="modern-styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - EduLearn</title>
+  <link rel="stylesheet" href="creative-about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
 
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="modern-loader">
-            <div class="loader-circle"></div>
-            <div class="loader-line-mask">
-                <div class="loader-line"></div>
-            </div>
-            <span class="loader-text">Loading</span>
-        </div>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader">
+      <svg viewBox="0 0 80 80">
+        <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
+      </svg>
+      <div class="loader-text">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+      </div>
     </div>
+  </div>
 
-    <!-- Header -->
-    <header class="modern-header">
-        <div class="container">
-            <div class="logo">
-                <h1>Edu<span>Learn</span></h1>
-            </div>
-            <nav>
-                <div class="menu-toggle">
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="courses-modern.html">Courses</a></li>
-                    <li><a href="features-modern.html">Features</a></li>
-                    <li><a href="about-modern.html" class="active">About Us</a></li>
-                    <li><a href="contact-modern.html">Contact</a></li>
-                    <li class="theme-switch">
-                        <i class="fas fa-moon"></i>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="modern-hero about-hero">
-        <div class="hero-background">
-            <div class="hero-shape shape1"></div>
-            <div class="hero-shape shape2"></div>
-            <div class="hero-shape shape3"></div>
-            <div class="hero-particles" id="particles-js"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">Our Story</div>
-                <h1 class="glitch-text" data-text="Transforming Education Through Innovation">Transforming Education Through Innovation</h1>
-                <p>Get to know the team and mission behind EduLearn's revolutionary approach to online learning</p>
-            </div>
-            <div class="hero-video">
-                <div class="video-wrapper">
-                    <img src="images/about-video-thumbnail.jpg" alt="About EduLearn">
-                    <div class="play-button" id="play-video">
-                        <i class="fas fa-play"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <div class="arrows">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Story -->
-    <section class="our-story-modern">
-        <div class="container">
-            <div class="story-timeline">
-                <div class="timeline-header">
-                    <div class="section-badge">Our Journey</div>
-                    <h2>From <span class="gradient-text">Vision</span> to Reality</h2>
-                    <p>The evolution of EduLearn from a small startup to a global education platform</p>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2020</div>
-                        <div class="timeline-content">
-                            <h3>The Beginning</h3>
-                            <p>Founded by Dr. Sarah Williams with a vision to make quality education accessible to everyone. Started with just 5 courses and a small team of passionate educators.</p>
-                            <div class="timeline-image">
-                                <img src="images/timeline-1.jpg" alt="EduLearn Beginning">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2021</div>
-                        <div class="timeline-content">
-                            <h3>First Milestone</h3>
-                            <p>Reached 1,000 students and expanded our course library to 50 courses. Launched our first learning paths and introduced interactive coding exercises.</p>
-                            <div class="timeline-image">
-                                <img src="images/timeline-2.jpg" alt="First Milestone">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2022</div>
-                        <div class="timeline-content">
-                            <h3>Going Mobile</h3>
-                            <p>Launched our mobile app for iOS and Android, enabling learning on the go. Introduced personalized learning paths and AI-powered course recommendations.</p>
-                            <div class="timeline-image">
-                                <img src="images/timeline-3.jpg" alt="Mobile Launch">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2023</div>
-                        <div class="timeline-content">
-                            <h3>Global Expansion</h3>
-                            <p>Expanded to 10 languages, serving students in over 120 countries. Formed partnerships with leading tech companies and universities to enhance our curriculum.</p>
-                            <div class="timeline-image">
-                                <img src="images/timeline-4.jpg" alt="Global Expansion">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2024</div>
-                        <div class="timeline-content">
-                            <h3>Industry Recognition</h3>
-                            <p>Won "Best Online Learning Platform" award and reached 10,000 students. Launched advanced certification programs recognized by top employers worldwide.</p>
-                            <div class="timeline-image">
-                                <img src="images/timeline-5.jpg" alt="Industry Recognition">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2025</div>
-                        <div class="timeline-content">
-                            <h3>Today & Beyond</h3>
-                            <p>Now serving 15,000+ students with over 300 courses. Continuing to innovate with VR learning experiences and advanced AI-powered personalization.</p>
-                            <div class="timeline-image">
-                                <img src="images/timeline-6.jpg" alt="Today and Beyond">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission & Vision -->
-    <section class="mission-vision-modern">
-        <div class="container">
-            <div class="mission-vision-tabs">
-                <div class="mv-tab-buttons">
-                    <button class="mv-tab active" data-tab="mission">Our Mission</button>
-                    <button class="mv-tab" data-tab="vision">Our Vision</button>
-                    <button class="mv-tab" data-tab="values">Our Values</button>
-                </div>
-                <div class="mv-tab-content">
-                    <div class="mv-tab-pane active" id="mission">
-                        <div class="mv-content">
-                            <div class="mv-icon">
-                                <i class="fas fa-bullseye"></i>
-                            </div>
-                            <h2>Our <span class="gradient-text">Mission</span></h2>
-                            <p class="mv-quote">"To empower individuals worldwide by providing accessible, high-quality education that enables them to acquire the skills needed to succeed in today's rapidly changing world."</p>
-                            <p>At EduLearn, we believe that education should be accessible to everyone, regardless of their background or location. Our mission is to break down barriers to learning by providing affordable, high-quality courses that are designed to help our students achieve their personal and professional goals.</p>
-                            <p>We are committed to creating a learning experience that is engaging, effective, and tailored to the needs of modern learners. Through innovative teaching methods, cutting-edge technology, and a supportive community, we aim to transform the way people learn and grow.</p>
-                        </div>
-                        <div class="mv-image">
-                            <img src="images/mission.jpg" alt="Our Mission">
-                        </div>
-                    </div>
-                    <div class="mv-tab-pane" id="vision">
-                        <div class="mv-content">
-                            <div class="mv-icon">
-                                <i class="fas fa-eye"></i>
-                            </div>
-                            <h2>Our <span class="gradient-text">Vision</span></h2>
-                            <p class="mv-quote">"To create a world where anyone, anywhere can transform their life through learning and access opportunities they never thought possible."</p>
-                            <p>We envision a future where education is not limited by geography, finances, or background. A world where anyone with an internet connection can access the knowledge and skills they need to pursue their dreams and improve their lives.</p>
-                            <p>Our vision extends beyond just providing courses. We aim to build a global community of lifelong learners who support each other, share knowledge, and collaborate to solve the world's most pressing challenges. Through education, we believe we can create a more equitable, innovative, and prosperous world for all.</p>
-                        </div>
-                        <div class="mv-image">
-                            <img src="images/vision.jpg" alt="Our Vision">
-                        </div>
-                    </div>
-                    <div class="mv-tab-pane" id="values">
-                        <div class="mv-content">
-                            <div class="mv-icon">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <h2>Our <span class="gradient-text">Values</span></h2>
-                            <div class="values-grid">
-                                <div class="value-item">
-                                    <div class="value-icon"><i class="fas fa-universal-access"></i></div>
-                                    <h3>Accessibility</h3>
-                                    <p>Making education available to everyone, regardless of location or background.</p>
-                                </div>
-                                <div class="value-item">
-                                    <div class="value-icon"><i class="fas fa-award"></i></div>
-                                    <h3>Excellence</h3>
-                                    <p>Striving for the highest standards in our courses and learning experience.</p>
-                                </div>
-                                <div class="value-item">
-                                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
-                                    <h3>Innovation</h3>
-                                    <p>Continuously improving our platform with cutting-edge educational technology.</p>
-                                </div>
-                                <div class="value-item">
-                                    <div class="value-icon"><i class="fas fa-users"></i></div>
-                                    <h3>Community</h3>
-                                    <p>Fostering a supportive global community of learners and educators.</p>
-                                </div>
-                                <div class="value-item">
-                                    <div class="value-icon"><i class="fas fa-hands-helping"></i></div>
-                                    <h3>Impact</h3>
-                                    <p>Creating meaningful change in people's lives through education.</p>
-                                </div>
-                                <div class="value-item">
-                                    <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
-                                    <h3>Integrity</h3>
-                                    <p>Acting with honesty, transparency, and ethical responsibility.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team-modern">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">Meet Our Team</div>
-                <h2>The Minds Behind <span class="gradient-text">EduLearn</span></h2>
-                <p>Our diverse team of educators, technologists, and visionaries</p>
-            </div>
-            <div class="team-filter">
-                <button class="team-filter-btn active" data-filter="all">All Team</button>
-                <button class="team-filter-btn" data-filter="leadership">Leadership</button>
-                <button class="team-filter-btn" data-filter="instructors">Instructors</button>
-                <button class="team-filter-btn" data-filter="technology">Technology</button>
-                <button class="team-filter-btn" data-filter="support">Support</button>
-            </div>
-            <div class="team-grid">
-                <div class="team-member" data-category="leadership">
-                    <div class="member-card">
-                        <div class="member-front">
-                            <div class="member-image">
-                                <img src="images/team-1.jpg" alt="Dr. Sarah Williams">
-                            </div>
-                            <div class="member-info">
-                                <h3>Dr. Sarah Williams</h3>
-                                <p>Founder & CEO</p>
-                            </div>
-                        </div>
-                        <div class="member-back">
-                            <h3>Dr. Sarah Williams</h3>
-                            <p class="member-title">Founder & CEO</p>
-                            <p class="member-bio">Former professor with 15+ years in education and a passion for accessible learning. PhD in Educational Technology from Stanford University.</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member" data-category="leadership">
-                    <div class="member-card">
-                        <div class="member-front">
-                            <div class="member-image">
-                                <img src="images/team-2.jpg" alt="Michael Chen">
-                            </div>
-                            <div class="member-info">
-                                <h3>Michael Chen</h3>
-                                <p>CTO</p>
-                            </div>
-                        </div>
-                        <div class="member-back">
-                            <h3>Michael Chen</h3>
-                            <p class="member-title">CTO</p>
-                            <p class="member-bio">Tech innovator with expertise in ed-tech and AI-powered learning systems. Previously led engineering teams at Google and EdX.</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member" data-category="leadership">
-                    <div class="member-card">
-                        <div class="member-front">
-                            <div class="member-image">
-                                <img src="images/team-3.jpg" alt="Emily Rodriguez">
-                            </div>
-                            <div class="member-info">
-                                <h3>Emily Rodriguez</h3>
-                                <p>Head of Content</p>
-                            </div>
-                        </div>
-                        <div class="member-back">
-                            <h3>Emily Rodriguez</h3>
-                            <p class="member-title">Head of Content</p>
-                            <p class="member-bio">Curriculum expert specializing in engaging and effective learning materials. Former curriculum director at Khan Academy.</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member" data-category="instructors">
-                    <div class="member-card">
-                        <div class="member-front">
-                            <div class="member-image">
-                                <img src="images/team-4.jpg" alt="David Okafor">
-                            </div>
-                            <div class="member-info">
-                                <h3>David Okafor</h3>
-                                <p>Lead Web Development Instructor</p>
-                            </div>
-                        </div>
-                        <div class="member-back">
-                            <h3>David Okafor</h3>
-                            <p class="member-title">Lead Web Development Instructor</p>
-                            <p class="member-bio">Full-stack developer with 10+ years of experience. Has taught over 50,000 students worldwide through his courses.</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member" data-category="instructors">
-                    <div class="member-card">
-                        <div class="member-front">
-                            <div class="member-image">
-                                <img src="images/team-5.jpg" alt="Jessica Lee">
-                            </div>
-                            <div class="member-info">
-                                <h3>Jessica Lee</h3>
-                                <p>Lead Design Instructor</p>
-                            </div>
-                        </div>
-                        <div class="member-back">
-                            <h3>Jessica Lee</h3>
-                            <p class="member-title">Lead Design Instructor</p>
-                            <p class="member-bio">Award-winning designer with experience at top agencies. Specializes in UI/UX design and creative direction.</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-dribbble"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member" data-category="technology">
-                    <div class="member-card">
-                        <div class="member-front">
-                            <div class="member-image">
-                                <img src="images/team-6.jpg" alt="Alex Johnson">
-                            </div>
-                            <div class="member-info">
-                                <h3>Alex Johnson</h3>
-                                <p>Lead Developer</p>
-                            </div>
-                        </div>
-                        <div class="member-back">
-                            <h3>Alex Johnson</h3>
-                            <p class="member-title">Lead Developer</p>
-                            <p class="member-bio">Full-stack developer specializing in educational platforms. Expert in React, Node.js, and cloud infrastructure.</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member" data-category="technology">
-                    <div class="member-card">
-                        <div class="member-front">
-                            <div class="member-image">
-                                <img src="images/team-7.jpg" alt="Sophia Kim">
-                            </div>
-                            <div class="member-info">
-                                <h3>Sophia Kim</h3>
-                                <p>UX Designer</p>
-                            </div>
-                        </div>
-                        <div class="member-back">
-                            <h3>Sophia Kim</h3>
-                            <p class="member-title">UX Designer</p>
-                            <p class="member-bio">User experience specialist focused on creating intuitive and accessible learning interfaces for diverse learners.</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-dribbble"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member" data-category="support">
-                    <div class="member-card">
-                        <div class="member-front">
-                            <div class="member-image">
-                                <img src="images/team-8.jpg" alt="Carlos Mendez">
-                            </div>
-                            <div class="member-info">
-                                <h3>Carlos Mendez</h3>
-                                <p>Student Success Manager</p>
-                            </div>
-                        </div>
-                        <div class="member-back">
-                            <h3>Carlos Mendez</h3>
-                            <p class="member-title">Student Success Manager</p>
-                            <p class="member-bio">Dedicated to helping students achieve their learning goals. Background in educational psychology and coaching.</p>
-                            <div class="member-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-modern">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="stat-number" data-count="15000">0</div>
-                    <div class="stat-label">Students Worldwide</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <div class="stat-number" data-count="300">0</div>
-                    <div class="stat-label">Courses Created</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="stat-number" data-count="120">0</div>
-                    <div class="stat-label">Countries Reached</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="stat-number" data-count="9500">0</div>
-                    <div class="stat-label">Certificates Issued</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials-modern">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">What People Say</div>
-                <h2>Student <span class="gradient-text">Testimonials</span></h2>
-                <p>Hear what our students have to say about their learning experience</p>
-            </div>
-            <div class="testimonial-carousel">
-                <div class="testimonial-track">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p>EduLearn completely transformed my career path. The Web Development course was comprehensive, practical, and taught me skills I use every day in my new role as a frontend developer.</p>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="images/testimonial-1.jpg" alt="James Wilson">
-                            </div>
-                            <div class="author-info">
-                                <h4>James Wilson</h4>
-                                <p>Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p>The Data Science path helped me transition from a data analyst to a senior data scientist role. The real-world projects prepared me for the exact challenges I now face daily in my job.</p>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="images/testimonial-2.jpg" alt="Priya Sharma">
-                            </div>
-                            <div class="author-info">
-                                <h4>Priya Sharma</h4>
-                                <p>Senior Data Scientist</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p>As a busy professional, I appreciated the flexibility of EduLearn's courses. The UI/UX Design course was comprehensive yet digestible, and the instructor support was exceptional.</p>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="images/testimonial-3.jpg" alt="Marcus Johnson">
-                            </div>
-                            <div class="author-info">
-                                <h4>Marcus Johnson</h4>
-                                <p>Product Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-controls">
-                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <div class="carousel-dots"></div>
-                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners Section -->
-    <section class="partners-modern">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">Collaborations</div>
-                <h2>Our <span class="gradient-text">Partners</span></h2>
-                <p>Working with leading organizations to ensure quality education</p>
-            </div>
-            <div class="partners-grid">
-                <div class="partner-logo">
-                    <img src="images/partner-1.png" alt="Google">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partner-2.png" alt="Microsoft">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partner-3.png" alt="Amazon">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partner-4.png" alt="IBM">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partner-5.png" alt="Adobe">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partner-6.png" alt="Stanford University">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Join Our Team -->
-    <section class="join-team-modern">
-        <div class="container">
-            <div class="join-team-content">
-                <div class="join-team-text">
-                    <div class="section-badge">Careers</div>
-                    <h2>Join Our <span class="gradient-text">Team</span></h2>
-                    <p>We're always looking for talented individuals who are passionate about education and technology. Join us in our mission to transform education worldwide.</p>
-                    <div class="benefits-grid">
-                        <div class="benefit-item">
-                            <div class="benefit-icon"><i class="fas fa-globe"></i></div>
-                            <div class="benefit-text">
-                                <h4>Remote-First Culture</h4>
-                                <p>Work from anywhere in the world</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
-                            <div class="benefit-text">
-                                <h4>Growth Opportunities</h4>
-                                <p>Continuous learning and career development</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <div class="benefit-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                            <div class="benefit-text">
-                                <h4>Meaningful Work</h4>
-                                <p>Make a real impact on education</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <div class="benefit-icon"><i class="fas fa-users"></i></div>
-                            <div class="benefit-text">
-                                <h4>Collaborative Environment</h4>
-                                <p>Work with passionate, talented colleagues</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-primary">View Open Positions</a>
-                </div>
-                <div class="join-team-image">
-                    <img src="images/join-team.jpg" alt="Join Our Team">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter-modern">
-        <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <div class="section-badge">Stay Updated</div>
-                    <h2>Get Company Updates & <span class="gradient-text">News</span></h2>
-                    <p>Join our newsletter and be the first to know about new courses, company updates, and educational resources</p>
-                </div>
-                <form class="newsletter-form">
-                    <div class="form-group">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </div>
-                    <div class="form-notice">We respect your privacy. Unsubscribe at any time.</div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="modern-footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-column">
-                        <div class="footer-logo">
-                            <h2>Edu<span>Learn</span></h2>
-                        </div>
-                        <p>Empowering individuals through quality education and innovative learning experiences.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="courses-modern.html">Courses</a></li>
-                            <li><a href="features-modern.html">Features</a></li>
-                            <li><a href="about-modern.html">About Us</a></li>
-                            <li><a href="contact-modern.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Top Categories</h3>
-                        <ul>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Data Science</a></li>
-                            <li><a href="#">UI/UX Design</a></li>
-                            <li><a href="#">Digital Marketing</a></li>
-                            <li><a href="#">Business Analytics</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Contact Us</h3>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p>123 Education St, Learning City</p>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <p>info@edulearn.com</p>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <p>+1 (555) 123-4567</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 EduLearn. All Rights Reserved.</p>
-                    <div class="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Cookie Policy</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <div class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-text">Edu<span class="highlight">Learn</span></span>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="creative-courses.html">Courses</a></li>
+          <li><a href="creative-about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+        <a href="#" class="btn btn-primary">Get Started</a>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
+  </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-    <script src="modern-script.js"></script>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <span class="logo-text">Edu<span class="highlight">Learn</span></span>
+      </div>
+      <button class="close-menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="creative-courses.html">Courses</a></li>
+      <li><a href="creative-about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="#" class="btn btn-primary btn-block">Get Started</a>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">About Us</div>
+        <h1 class="hero-title">Empowering <span class="gradient-text">Educators</span> for Tomorrow</h1>
+        <p class="hero-description">Discover the story behind EduLearn, our mission, values, and the dedicated team working to transform Junior High School education.</p>
+        <div class="hero-buttons">
+          <a href="#our-story" class="btn btn-primary">Our Story</a>
+          <a href="#meet-team" class="btn btn-outline">Meet Our Team</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-container">
+          <img src="/placeholder.svg?height=400&width=500" alt="EduLearn Team">
+        </div>
+        <div class="floating-badge badge-1">
+          <div class="badge-icon"><i class="fas fa-award"></i></div>
+          <div class="badge-text">
+            <h3>15+</h3>
+            <p>Years of Excellence</p>
+          </div>
+        </div>
+        <div class="floating-badge badge-2">
+          <div class="badge-icon"><i class="fas fa-users"></i></div>
+          <div class="badge-text">
+            <h3>5,000+</h3>
+            <p>Educators Trained</p>
+          </div>
+        </div>
+        <div class="floating-badge badge-3">
+          <div class="badge-icon"><i class="fas fa-school"></i></div>
+          <div class="badge-text">
+            <h3>200+</h3>
+            <p>Partner Schools</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="story-section" id="our-story">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Our Story</div>
+        <h2>The Journey of <span class="gradient-text">EduLearn</span></h2>
+        <p>How we started and evolved to become a leading educational platform for Junior High School teachers</p>
+      </div>
+      <div class="story-content">
+        <div class="story-image">
+          <img src="/placeholder.svg?height=500&width=600" alt="EduLearn History">
+          <div class="image-overlay"></div>
+          <div class="story-year">
+            <span>Since</span>
+            <h3>2008</h3>
+          </div>
+        </div>
+        <div class="story-text">
+          <p>EduLearn was founded in 2008 with a simple yet powerful vision: to transform Junior High School education by empowering teachers with specialized knowledge, innovative teaching methodologies, and a supportive community.</p>
+          <p>What began as a small workshop series for 20 local educators has grown into a comprehensive platform serving thousands of teachers across the country. Our journey has been marked by a constant commitment to educational excellence and a deep understanding of the unique challenges faced by Junior High School educators.</p>
+          <p>Today, EduLearn offers specialized courses, resources, and professional development opportunities designed specifically for Junior High School teachers. Our approach combines research-based methodologies with practical classroom applications, ensuring that educators can immediately implement what they learn to benefit their students.</p>
+          <div class="story-signature">
+            <img src="/placeholder.svg?height=80&width=200" alt="Founder's Signature">
+            <div class="signature-info">
+              <h4>Dr. James Wilson</h4>
+              <p>Founder & Educational Director</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Values Section -->
+  <section class="mission-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Our Purpose</div>
+        <h2>Mission & <span class="gradient-text">Values</span></h2>
+        <p>The principles that guide our work and define our commitment to education</p>
+      </div>
+      <div class="mission-container">
+        <div class="mission-card">
+          <div class="mission-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>To empower Junior High School educators with specialized knowledge, innovative teaching strategies, and a supportive community that enables them to inspire the next generation of learners.</p>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3>Our Vision</h3>
+          <p>A world where every Junior High School teacher has access to high-quality professional development, resulting in engaged, confident students prepared for future academic success.</p>
+        </div>
+      </div>
+      <div class="values-container">
+        <div class="value-card" data-value="Excellence">
+          <div class="value-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellence</h3>
+          <p>We are committed to the highest standards in educational content and delivery.</p>
+        </div>
+        <div class="value-card" data-value="Innovation">
+          <div class="value-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Innovation</h3>
+          <p>We continuously explore new teaching methodologies and technologies.</p>
+        </div>
+        <div class="value-card" data-value="Inclusivity">
+          <div class="value-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Inclusivity</h3>
+          <p>We embrace diversity and ensure our resources are accessible to all educators.</p>
+        </div>
+        <div class="value-card" data-value="Community">
+          <div class="value-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Community</h3>
+          <p>We foster a supportive network where educators can connect and collaborate.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mission-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Our Journey</div>
+        <h2>Key <span class="gradient-text">Milestones</span></h2>
+        <p>The significant moments that have shaped our growth and impact</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2008</div>
+          <div class="timeline-content">
+            <h3>Foundation</h3>
+            <p>EduLearn was founded with the first workshop series for 20 local Junior High School teachers.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2010</div>
+          <div class="timeline-content">
+            <h3>Curriculum Development</h3>
+            <p>Launched our first comprehensive curriculum for mathematics and science education.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2013</div>
+          <div class="timeline-content">
+            <h3>Digital Transformation</h3>
+            <p>Introduced our online learning platform, making resources accessible to educators nationwide.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2016</div>
+          <div class="timeline-content">
+            <h3>Research Partnership</h3>
+            <p>Established partnerships with leading universities to conduct research on effective teaching methodologies.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019</div>
+          <div class="timeline-content">
+            <h3>Global Expansion</h3>
+            <p>Extended our reach internationally, supporting educators in 15 countries.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022</div>
+          <div class="timeline-content">
+            <h3>Innovative Curriculum</h3>
+            <p>Launched specialized courses in emerging educational areas including digital literacy and STEM integration.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <h3>Future Vision</h3>
+            <p>Continuing our mission to transform education with innovative approaches and expanded reach.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-number" data-count="15">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="5000">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Educators Trained</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="200">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Partner Schools</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="98">0</div>
+          <div class="stat-percent">%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section" id="meet-team">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Our People</div>
+        <h2>Meet Our <span class="gradient-text">Team</span></h2>
+        <p>The dedicated professionals behind EduLearn's success</p>
+      </div>
+      <div class="team-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="leadership">Leadership</button>
+        <button class="filter-btn" data-filter="education">Education</button>
+        <button class="filter-btn" data-filter="development">Development</button>
+      </div>
+      <div class="team-container">
+        <div class="team-member" data-category="leadership">
+          <div class="member-image">
+            <img src="/placeholder.svg?height=300&width=300" alt="Dr. James Wilson">
+            <div class="member-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3>Dr. James Wilson</h3>
+            <p class="member-role">Founder & Educational Director</p>
+            <p class="member-bio">With over 20 years of experience in education, Dr. Wilson leads our vision and educational strategy.</p>
+          </div>
+        </div>
+        <div class="team-member" data-category="leadership">
+          <div class="member-image">
+            <img src="/placeholder.svg?height=300&width=300" alt="Sarah Johnson">
+            <div class="member-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3>Sarah Johnson</h3>
+            <p class="member-role">Chief Operations Officer</p>
+            <p class="member-bio">Sarah oversees our day-to-day operations and ensures the smooth delivery of all our programs.</p>
+          </div>
+        </div>
+        <div class="team-member" data-category="education">
+          <div class="member-image">
+            <img src="/placeholder.svg?height=300&width=300" alt="Prof. Michael Chen">
+            <div class="member-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3>Prof. Michael Chen</h3>
+            <p class="member-role">Mathematics Education Lead</p>
+            <p class="member-bio">An expert in mathematics education, Michael develops our innovative math curriculum.</p>
+          </div>
+        </div>
+        <div class="team-member" data-category="education">
+          <div class="member-image">
+            <img src="/placeholder.svg?height=300&width=300" alt="Dr. Emily Rodriguez">
+            <div class="member-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3>Dr. Emily Rodriguez</h3>
+            <p class="member-role">Language Arts Specialist</p>
+            <p class="member-bio">Emily brings creativity and innovation to our language arts and literacy programs.</p>
+          </div>
+        </div>
+        <div class="team-member" data-category="development">
+          <div class="member-image">
+            <img src="/placeholder.svg?height=300&width=300" alt="David Wilson">
+            <div class="member-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3>David Wilson</h3>
+            <p class="member-role">Technology Director</p>
+            <p class="member-bio">David leads our technical team, ensuring our platform delivers seamless learning experiences.</p>
+          </div>
+        </div>
+        <div class="team-member" data-category="development">
+          <div class="member-image">
+            <img src="/placeholder.svg?height=300&width=300" alt="Lisa Chang">
+            <div class="member-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3>Lisa Chang</h3>
+            <p class="member-role">UX/UI Designer</p>
+            <p class="member-bio">Lisa creates intuitive, engaging interfaces that enhance the learning experience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="team-cta">
+        <p>Interested in joining our team?</p>
+        <a href="#" class="btn btn-primary">View Careers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">What People Say</div>
+        <h2>Educator <span class="gradient-text">Testimonials</span></h2>
+        <p>Hear from the teachers who have experienced our programs</p>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonials-track">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">"EduLearn transformed my teaching approach completely. The mathematics course provided practical strategies that I implemented immediately in my classroom, resulting in higher student engagement and better test scores."</p>
+            <div class="testimonial-author">
+              <img src="/placeholder.svg?height=60&width=60" alt="John Smith">
+              <div class="author-info">
+                <h4>John Smith</h4>
+                <p>Mathematics Teacher, Lincoln Junior High</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">"The research methodologies I learned through EduLearn's action research course have become invaluable tools for continuous improvement in my classroom. I now approach teaching challenges with confidence and evidence-based solutions."</p>
+            <div class="testimonial-author">
+              <img src="/placeholder.svg?height=60&width=60" alt="Maria Garcia">
+              <div class="author-info">
+                <h4>Maria Garcia</h4>
+                <p>Science Teacher, Westside Junior High</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">"As a language arts teacher, I was looking for fresh approaches to engage my students with literature. EduLearn's curriculum provided exactly what I needed - creative strategies that make reading and writing exciting for my students."</p>
+            <div class="testimonial-author">
+              <img src="/placeholder.svg?height=60&width=60" alt="Robert Johnson">
+              <div class="author-info">
+                <h4>Robert Johnson</h4>
+                <p>English Teacher, Eastwood Junior High</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">"The community of educators I've connected with through EduLearn has been just as valuable as the courses themselves. Having a network of colleagues to share ideas and challenges with has made me a better teacher."</p>
+            <div class="testimonial-author">
+              <img src="/placeholder.svg?height=60&width=60" alt="Jennifer Lee">
+              <div class="author-info">
+                <h4>Jennifer Lee</h4>
+                <p>Social Studies Teacher, Northside JHS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-arrow prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="testimonial-dots"></div>
+          <button class="testimonial-arrow next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Our Network</div>
+        <h2>Trusted <span class="gradient-text">Partners</span></h2>
+        <p>Organizations that collaborate with us to improve education</p>
+      </div>
+      <div class="partners-container">
+        <div class="partner">
+          <img src="/placeholder.svg?height=80&width=180" alt="Partner 1">
+        </div>
+        <div class="partner">
+          <img src="/placeholder.svg?height=80&width=180" alt="Partner 2">
+        </div>
+        <div class="partner">
+          <img src="/placeholder.svg?height=80&width=180" alt="Partner 3">
+        </div>
+        <div class="partner">
+          <img src="/placeholder.svg?height=80&width=180" alt="Partner 4">
+        </div>
+        <div class="partner">
+          <img src="/placeholder.svg?height=80&width=180" alt="Partner 5">
+        </div>
+        <div class="partner">
+          <img src="/placeholder.svg?height=80&width=180" alt="Partner 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Transform Your Teaching?</h2>
+        <p>Join thousands of educators who are enhancing their skills and inspiring students with our specialized courses.</p>
+        <div class="cta-buttons">
+          <a href="creative-courses.html" class="btn btn-primary btn-lg">Explore Courses</a>
+          <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+        </div>
+      </div>
+      <div class="cta-image">
+        <img src="/placeholder.svg?height=300&width=400" alt="Transform Teaching">
+      </div>
+    </div>
+    <div class="cta-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span class="logo-text">Edu<span class="highlight">Learn</span></span>
+          <p>Empowering educators with specialized courses designed for Junior High School teaching excellence.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="creative-courses.html">Courses</a></li>
+              <li><a href="creative-about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Courses</h3>
+            <ul>
+              <li><a href="#">Mathematics</a></li>
+              <li><a href="#">ICT</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Language</a></li>
+              <li><a href="#">All Courses</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Contact Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Get the latest updates on new courses and educational resources.</p>
+          <form class="newsletter-form">
+            <div class="form-group">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="creative-about.js"></script>
 </body>
 </html>
 

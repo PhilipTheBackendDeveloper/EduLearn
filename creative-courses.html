@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Courses - EduLearn</title>
+  <link rel="stylesheet" href="creative-courses.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader">
+      <svg viewBox="0 0 80 80">
+        <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
+      </svg>
+      <div class="loader-text">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-text">Edu<span class="highlight">Learn</span></span>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses-creative.html" class="active">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+        <a href="#" class="btn btn-primary">Get Started</a>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <span class="logo-text">Edu<span class="highlight">Learn</span></span>
+      </div>
+      <button class="close-menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses-creative.html" class="active">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="#" class="btn btn-primary btn-block">Get Started</a>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Explore Our Courses</div>
+        <h1 class="hero-title">Discover Your <span class="gradient-text">Learning Path</span></h1>
+        <p class="hero-description">Enhance your teaching skills with our specialized courses designed for Junior High School educators</p>
+        <div class="search-container">
+          <div class="search-box">
+            <input type="text" placeholder="What do you want to learn today?" id="search-input">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="search-tags">
+            <span class="search-tag-label">Popular:</span>
+            <a href="#" class="search-tag" data-filter="mathematics">Mathematics</a>
+            <a href="#" class="search-tag" data-filter="ict">ICT</a>
+            <a href="#" class="search-tag" data-filter="research">Research</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-container">
+          <img src="/placeholder.svg?height=400&width=500" alt="Learning Illustration">
+        </div>
+        <div class="floating-card card-1">
+          <div class="card-icon"><i class="fas fa-book"></i></div>
+          <div class="card-text">
+            <h3>6</h3>
+            <p>Specialized Courses</p>
+          </div>
+        </div>
+        <div class="floating-card card-2">
+          <div class="card-icon"><i class="fas fa-certificate"></i></div>
+          <div class="card-text">
+            <h3>JHS</h3>
+            <p>Focused Curriculum</p>
+          </div>
+        </div>
+        <div class="floating-card card-3">
+          <div class="card-profile">
+            <img src="/placeholder.svg?height=40&width=40" alt="Student">
+          </div>
+          <div class="card-text">
+            <div class="card-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Excellent courses!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-container">
+        <div class="filter-group">
+          <label>Category</label>
+          <div class="filter-options">
+            <button class="filter-option active" data-category="all">All</button>
+            <button class="filter-option" data-category="mathematics">Mathematics</button>
+            <button class="filter-option" data-category="ict">ICT</button>
+            <button class="filter-option" data-category="education">Education</button>
+            <button class="filter-option" data-category="language">Language</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Sort By</label>
+          <div class="custom-select">
+            <select id="sort-select">
+              <option value="default">Recommended</option>
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+              <option value="popularity">Popularity</option>
+            </select>
+            <div class="select-icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>View</label>
+          <div class="view-options">
+            <button class="view-option active" data-view="grid">
+              <i class="fas fa-th-large"></i>
+            </button>
+            <button class="view-option" data-view="list">
+              <i class="fas fa-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses-section">
+    <div class="container">
+      <div class="courses-container grid-view" id="courses-container">
+        <!-- Course 1 -->
+        <div class="course-card" data-category="education">
+          <div class="course-card-inner">
+            <div class="course-card-front">
+              <div class="course-image">
+                <img src="/placeholder.svg?height=220&width=400" alt="Inquiry and Action Research">
+                <div class="course-badge">Education</div>
+              </div>
+              <div class="course-content">
+                <h3 class="course-title">Edu 353: Inquiry and Action Research in JHS</h3>
+                <div class="course-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>8 weeks</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-signal"></i>
+                    <span>Intermediate</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>124 students</span>
+                  </div>
+                </div>
+                <div class="course-rating">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <span class="rating-count">4.5 (86 reviews)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-instructor">
+                    <img src="/placeholder.svg?height=40&width=40" alt="Instructor">
+                    <span>Dr. Sarah Johnson</span>
+                  </div>
+                  <div class="course-price">$89</div>
+                </div>
+              </div>
+              <button class="flip-btn">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+            <div class="course-card-back">
+              <button class="flip-close">
+                <i class="fas fa-times"></i>
+              </button>
+              <h3 class="course-title">Edu 353: Inquiry and Action Research in JHS</h3>
+              <div class="course-description">
+                <p>This course focuses on developing research skills for Junior High School teachers. Learn how to conduct action research to improve classroom practices and student outcomes.</p>
+                <h4>What you'll learn:</h4>
+                <ul>
+                  <li>Research methodologies applicable to JHS settings</li>
+                  <li>Data collection and analysis techniques</li>
+                  <li>Implementing research findings in the classroom</li>
+                  <li>Writing and presenting research papers</li>
+                </ul>
+                <h4>Course includes:</h4>
+                <div class="course-features">
+                  <div class="feature">
+                    <i class="fas fa-video"></i>
+                    <span>24 video lessons</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-file-alt"></i>
+                    <span>12 assignments</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certificate</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card" data-category="mathematics">
+          <div class="course-card-inner">
+            <div class="course-card-front">
+              <div class="course-image">
+                <img src="/placeholder.svg?height=220&width=400" alt="Teaching JHS Mathematics">
+                <div class="course-badge">Mathematics</div>
+              </div>
+              <div class="course-content">
+                <h3 class="course-title">MATHSJ 353: Teaching and Accessing JHS Mathematics (Intermediate)</h3>
+                <div class="course-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>10 weeks</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-signal"></i>
+                    <span>Intermediate</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>156 students</span>
+                  </div>
+                </div>
+                <div class="course-rating">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <span class="rating-count">4.9 (112 reviews)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-instructor">
+                    <img src="/placeholder.svg?height=40&width=40" alt="Instructor">
+                    <span>Prof. Michael Chen</span>
+                  </div>
+                  <div class="course-price">$99</div>
+                </div>
+              </div>
+              <button class="flip-btn">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+            <div class="course-card-back">
+              <button class="flip-close">
+                <i class="fas fa-times"></i>
+              </button>
+              <h3 class="course-title">MATHSJ 353: Teaching and Accessing JHS Mathematics (Intermediate)</h3>
+              <div class="course-description">
+                <p>Enhance your skills in teaching mathematics to Junior High School students. This course covers intermediate teaching strategies, assessment methods, and curriculum development.</p>
+                <h4>What you'll learn:</h4>
+                <ul>
+                  <li>Effective teaching strategies for JHS mathematics</li>
+                  <li>Creating engaging math activities and exercises</li>
+                  <li>Assessment techniques for mathematics</li>
+                  <li>Addressing common mathematical misconceptions</li>
+                </ul>
+                <h4>Course includes:</h4>
+                <div class="course-features">
+                  <div class="feature">
+                    <i class="fas fa-video"></i>
+                    <span>32 video lessons</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-file-alt"></i>
+                    <span>15 assignments</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certificate</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card" data-category="ict">
+          <div class="course-card-inner">
+            <div class="course-card-front">
+              <div class="course-image">
+                <img src="/placeholder.svg?height=220&width=400" alt="Database Systems">
+                <div class="course-badge">ICT</div>
+              </div>
+              <div class="course-content">
+                <h3 class="course-title">ICT J 351: Database System and Software Development</h3>
+                <div class="course-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>12 weeks</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-signal"></i>
+                    <span>Intermediate</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>178 students</span>
+                  </div>
+                </div>
+                <div class="course-rating">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <span class="rating-count">4.6 (98 reviews)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-instructor">
+                    <img src="/placeholder.svg?height=40&width=40" alt="Instructor">
+                    <span>Dr. David Wilson</span>
+                  </div>
+                  <div class="course-price">$109</div>
+                </div>
+              </div>
+              <button class="flip-btn">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+            <div class="course-card-back">
+              <button class="flip-close">
+                <i class="fas fa-times"></i>
+              </button>
+              <h3 class="course-title">ICT J 351: Database System and Software Development</h3>
+              <div class="course-description">
+                <p>Learn how to teach database systems and software development concepts to Junior High School students. This course covers fundamental database principles and basic software development.</p>
+                <h4>What you'll learn:</h4>
+                <ul>
+                  <li>Database design and management for JHS curriculum</li>
+                  <li>Introduction to SQL and database queries</li>
+                  <li>Basic software development concepts</li>
+                  <li>Project-based learning approaches for ICT</li>
+                </ul>
+                <h4>Course includes:</h4>
+                <div class="course-features">
+                  <div class="feature">
+                    <i class="fas fa-video"></i>
+                    <span>36 video lessons</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-file-alt"></i>
+                    <span>18 assignments</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certificate</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card" data-category="language">
+          <div class="course-card-inner">
+            <div class="course-card-front">
+              <div class="course-image">
+                <img src="/placeholder.svg?height=220&width=400" alt="English Language Curriculum">
+                <div class="course-badge">Language</div>
+              </div>
+              <div class="course-content">
+                <h3 class="course-title">LLSJ 353: English Language Curriculum for JHS</h3>
+                <div class="course-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>9 weeks</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-signal"></i>
+                    <span>Intermediate</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>142 students</span>
+                  </div>
+                </div>
+                <div class="course-rating">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <span class="rating-count">4.0 (76 reviews)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-instructor">
+                    <img src="/placeholder.svg?height=40&width=40" alt="Instructor">
+                    <span>Prof. Emily Rodriguez</span>
+                  </div>
+                  <div class="course-price">$79</div>
+                </div>
+              </div>
+              <button class="flip-btn">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+            <div class="course-card-back">
+              <button class="flip-close">
+                <i class="fas fa-times"></i>
+              </button>
+              <h3 class="course-title">LLSJ 353: English Language Curriculum for JHS</h3>
+              <div class="course-description">
+                <p>Develop skills to effectively teach English language in Junior High School. This course covers curriculum development, teaching methodologies, and assessment strategies.</p>
+                <h4>What you'll learn:</h4>
+                <ul>
+                  <li>English language curriculum design for JHS</li>
+                  <li>Teaching reading, writing, speaking, and listening skills</li>
+                  <li>Assessment strategies for language learning</li>
+                  <li>Incorporating literature in language teaching</li>
+                </ul>
+                <h4>Course includes:</h4>
+                <div class="course-features">
+                  <div class="feature">
+                    <i class="fas fa-video"></i>
+                    <span>28 video lessons</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-file-alt"></i>
+                    <span>14 assignments</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certificate</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="course-card" data-category="mathematics">
+          <div class="course-card-inner">
+            <div class="course-card-front">
+              <div class="course-image">
+                <img src="/placeholder.svg?height=220&width=400" alt="Learning and Teaching Calculus">
+                <div class="course-badge">Mathematics</div>
+              </div>
+              <div class="course-content">
+                <h3 class="course-title">MATHSJ 353: Learning, Teaching and Applying Calculus</h3>
+                <div class="course-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>11 weeks</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-signal"></i>
+                    <span>Advanced</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>132 students</span>
+                  </div>
+                </div>
+                <div class="course-rating">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <span class="rating-count">4.7 (92 reviews)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-instructor">
+                    <img src="/placeholder.svg?height=40&width=40" alt="Instructor">
+                    <span>Dr. Robert Chang</span>
+                  </div>
+                  <div class="course-price">$119</div>
+                </div>
+              </div>
+              <button class="flip-btn">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+            <div class="course-card-back">
+              <button class="flip-close">
+                <i class="fas fa-times"></i>
+              </button>
+              <h3 class="course-title">MATHSJ 353: Learning, Teaching and Applying Calculus</h3>
+              <div class="course-description">
+                <p>Master the art of teaching calculus concepts to Junior High School students. This course focuses on making calculus accessible and engaging for young learners.</p>
+                <h4>What you'll learn:</h4>
+                <ul>
+                  <li>Fundamental calculus concepts for JHS curriculum</li>
+                  <li>Strategies for teaching derivatives and integrals</li>
+                  <li>Real-world applications of calculus</li>
+                  <li>Visual and interactive approaches to calculus</li>
+                </ul>
+                <h4>Course includes:</h4>
+                <div class="course-features">
+                  <div class="feature">
+                    <i class="fas fa-video"></i>
+                    <span>34 video lessons</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-file-alt"></i>
+                    <span>16 assignments</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certificate</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="course-card" data-category="ict">
+          <div class="course-card-inner">
+            <div class="course-card-front">
+              <div class="course-image">
+                <img src="/placeholder.svg?height=220&width=400" alt="Web and Mobile Application">
+                <div class="course-badge">ICT</div>
+                <div class="course-badge-popular">Popular</div>
+              </div>
+              <div class="course-content">
+                <h3 class="course-title">ICTJ 353: Web and Mobile Application</h3>
+                <div class="course-meta">
+                  <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>14 weeks</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-signal"></i>
+                    <span>Intermediate</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>215 students</span>
+                  </div>
+                </div>
+                <div class="course-rating">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <span class="rating-count">4.9 (145 reviews)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-instructor">
+                    <img src="/placeholder.svg?height=40&width=40" alt="Instructor">
+                    <span>Prof. James Wilson</span>
+                  </div>
+                  <div class="course-price">$129</div>
+                </div>
+              </div>
+              <button class="flip-btn">
+                <i class="fas fa-info-circle"></i>
+                <span>Details</span>
+              </button>
+            </div>
+            <div class="course-card-back">
+              <button class="flip-close">
+                <i class="fas fa-times"></i>
+              </button>
+              <h3 class="course-title">ICTJ 353: Web and Mobile Application</h3>
+              <div class="course-description">
+                <p>Learn how to teach web and mobile application development to Junior High School students. This course covers fundamental concepts of web design, HTML, CSS, and basic mobile app development.</p>
+                <h4>What you'll learn:</h4>
+                <ul>
+                  <li>Web development fundamentals for JHS curriculum</li>
+                  <li>Introduction to HTML, CSS, and JavaScript</li>
+                  <li>Basic mobile app development concepts</li>
+                  <li>Project-based teaching approaches for web and mobile development</li>
+                </ul>
+                <h4>Course includes:</h4>
+                <div class="course-features">
+                  <div class="feature">
+                    <i class="fas fa-video"></i>
+                    <span>42 video lessons</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-file-alt"></i>
+                    <span>20 assignments</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certificate</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- No Results Message -->
+      <div class="no-results" style="display: none;">
+        <div class="no-results-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3>No courses found</h3>
+        <p>Try adjusting your search or filter to find what you're looking for.</p>
+        <button class="btn btn-outline reset-filters">Reset Filters</button>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="load-more-container">
+        <button class="btn btn-outline load-more">
+          <span>Load More</span>
+          <i class="fas fa-spinner fa-spin" style="display: none;"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Course -->
+  <section class="featured-course-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Featured Course</div>
+        <h2>Most Popular <span class="gradient-text">Course</span></h2>
+        <p>Our highest-rated and most enrolled course for Junior High School educators</p>
+      </div>
+      <div class="featured-course">
+        <div class="featured-course-content">
+          <div class="featured-badge">
+            <i class="fas fa-award"></i>
+            <span>Top Rated</span>
+          </div>
+          <h3>ICTJ 353: Web and Mobile Application</h3>
+          <div class="featured-rating">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span>4.9 (145 reviews)</span>
+          </div>
+          <p>Learn how to teach web and mobile application development to Junior High School students. This comprehensive course covers fundamental concepts of web design, HTML, CSS, and basic mobile app development with hands-on projects and practical teaching strategies.</p>
+          <div class="featured-highlights">
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span>42 video lessons</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span>20 practical assignments</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span>14 weeks curriculum</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-check-circle"></i>
+              <span>Lifetime access</span>
+            </div>
+          </div>
+          <div class="featured-instructor">
+            <img src="/placeholder.svg?height=60&width=60" alt="Prof. James Wilson">
+            <div class="instructor-info">
+              <h4>Prof. James Wilson</h4>
+              <p>Web Development Expert with 15+ years of teaching experience</p>
+            </div>
+          </div>
+          <div class="featured-actions">
+            <a href="#" class="btn btn-primary">Enroll Now</a>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+        <div class="featured-course-image">
+          <img src="/placeholder.svg?height=400&width=600" alt="Web and Mobile Application">
+          <div class="featured-stats">
+            <div class="stat">
+              <div class="stat-number">215</div>
+              <div class="stat-label">Students</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">42</div>
+              <div class="stat-label">Lessons</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">14</div>
+              <div class="stat-label">Weeks</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Testimonials</div>
+        <h2>What Our <span class="gradient-text">Students Say</span></h2>
+        <p>Hear from educators who have completed our courses</p>
+      </div>
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"The ICTJ 353 course completely transformed how I teach web development to my JHS students. The practical approaches and project-based learning strategies have made my classes more engaging and effective."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="/placeholder.svg?height=60&width=60" alt="John Smith">
+            <div class="author-info">
+              <h4>John Smith</h4>
+              <p>ICT Teacher, Lincoln Junior High</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"MATHSJ 353 provided me with innovative approaches to teaching calculus. My students now understand complex concepts more easily, and their test scores have significantly improved."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="/placeholder.svg?height=60&width=60" alt="Maria Garcia">
+            <div class="author-info">
+              <h4>Maria Garcia</h4>
+              <p>Mathematics Teacher, Westside JHS</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"The action research course helped me identify and address specific challenges in my classroom. The research methodologies I learned have become invaluable tools for continuous improvement."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="/placeholder.svg?height=60&width=60" alt="David Johnson">
+            <div class="author-info">
+              <h4>David Johnson</h4>
+              <p>Science Teacher, Eastwood Junior High</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="testimonial-control prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="testimonial-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="testimonial-control next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Enhance Your Teaching Skills?</h2>
+        <p>Join thousands of educators who are transforming their classrooms with our specialized courses.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-primary btn-lg">Get Started Today</a>
+          <a href="#" class="btn btn-outline btn-lg">Browse All Courses</a>
+        </div>
+      </div>
+      <div class="cta-image">
+        <img src="/placeholder.svg?height=300&width=400" alt="Teaching Skills">
+      </div>
+    </div>
+    <div class="cta-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span class="logo-text">Edu<span class="highlight">Learn</span></span>
+          <p>Empowering educators with specialized courses designed for Junior High School teaching excellence.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="courses-creative.html">Courses</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Courses</h3>
+            <ul>
+              <li><a href="#">Mathematics</a></li>
+              <li><a href="#">ICT</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Language</a></li>
+              <li><a href="#">All Courses</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Contact Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Get the latest updates on new courses and educational resources.</p>
+          <form class="newsletter-form">
+            <div class="form-group">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="creative-courses.js"></script>
+</body>
+</html>

@@ -1333,6 +1333,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
+    
   }
   
   .featured-stats {
@@ -1530,6 +1532,10 @@
   .cta-image {
     flex: 1;
     max-width: 400px;
+  }
+  .cta-image img {
+    border-radius: 15px;
+    
   }
   
   .cta-shapes .shape {

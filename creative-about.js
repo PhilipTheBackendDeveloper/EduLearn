@@ -1,8 +1,3 @@
-/**
- * Creative About Page JavaScript
- * Modern and interactive functionality
- */
-
 // Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", () => {
     // Initialize all components

@@ -1,6 +1,22 @@
 /* Base Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
+:root {
+    --primary-color: #4361ee;
+    --primary-light: #4895ef;
+    --secondary-color: #3a0ca3;
+    --accent-color: #4cc9f0;
+    --accent-secondary: #f72585;
+    --text-color: #2b2d42;
+    --text-light: #6c757d;
+    --white: #ffffff;
+    --light-bg: #f8f9fa;
+    --dark-bg: #1a1a2e;
+    --border-color: #e9ecef;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+    --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    --gradient-secondary: linear-gradient(135deg, var(--accent-secondary) 0%, var(--secondary-color) 100%);
+}
 
 
 .dark {
